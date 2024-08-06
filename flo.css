@@ -1,4 +1,85 @@
 *{
+    
     margin-right: 2px;
     padding: auto;
+}
+body{
+    background-image: url("bag.jpg");
+    background-position:center;
+    background-repeat:initial;
+    background-size:auto;
+    position: relative;    
+}
+.begin{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 15%;
+    background:rgb(187, 161, 130,0.4);
+    text-align: center;
+
+}
+.logo{
+    font-family: Lobster, cursive;
+    font-size: 3.5em;
+    font-weight: 500;
+    position: absolute;
+    top: 28%;
+    left: 80%;
+    transition: 0.3s ease;
+}
+.span{
+    color: rgb(147, 113, 72);
+}
+.logo:hover{
+    color:purple ;
+    text-shadow: 0 0 25px rgba(202, 60, 157, 0.5),
+                 0 0 25px rgba(202, 60, 157, 0.5);
+    transition: 0.3s ease-in;
+}
+.navbar{
+    display: flex;
+    
+}
+.navbar ul{
+    margin: 0px 20px;
+    padding: 0px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.navbar ul li{
+    list-style: none;
+    font-size: 30px;
+    margin: 5px;
+    padding: 5px;
+    margin-right: 10px;
+
+}
+.nav-buttons{
+    background-color: bisque;
+    border: none;
+    padding: 10px 20px;
+    font-size: 15px;
+    border-radius: 12px;
+    transition: 0.3s ease;
+}
+.nav-buttons:hover{
+    background-color: rgb(238, 197, 148);
+    transition: 0.3s ease;
+    border: 2px solid white;
+}
+.nav-buttons i{
+    font-size: 20px;
+    margin: 10px;
+    padding: 0;
+    box-shadow: 0 0 2px 0.5px solid;
+}
+.start{
+    position: absolute;
+    top:20vh;
+    left: 70vh;
+    font-size: 19px;
+    font-weight: 500;
+
 }
