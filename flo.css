@@ -77,9 +77,20 @@ body{
 }
 .start{
     position: absolute;
-    top:20vh;
-    left: 70vh;
-    font-size: 19px;
+    top:15vh;
+    left: 60vh;
+    font-size: 21px;
     font-weight: 500;
 
+}
+.shopimg{
+    width: 20%;
+    height: 40%;
+    border-radius: 12px;
+   position: relative;
+   left: 70%;
+   
+
+   
+    
 }
