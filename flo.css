@@ -4,11 +4,7 @@
     padding: auto;
 }
 body{
-    background-image: url("bag.jpg");
-    background-position:center;
-    background-repeat:initial;
-    background-size:auto;
-    position: relative;    
+    background-color:rgb(220, 211, 193);
 }
 .begin{
     position: fixed;
@@ -77,20 +73,82 @@ body{
 }
 .start{
     position: absolute;
-    top:15vh;
-    left: 60vh;
+    top:25vh;
+    left: 20vh;
     font-size: 21px;
     font-weight: 500;
 
 }
+.see{
+    width: 345px;
+    display: flex;
+    gap: 2em;
+}
+.btn{
+    width: 180px;
+    display: flex;
+    gap: 2em;
+    position: absolute;
+    top:65vh;
+    left: 40vh;
+}
+.see{
+    padding: 15px 28px;
+    background-color: rgb(135, 110, 77);
+    color: white;
+    border: 2px solid transparent;
+    border: 8px;
+    font-size: 18px;
+    border-radius: 12px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+.see:hover{
+    background-color: rgb(197, 169, 134);
+    color: black;
+    border: 2px solid wheat;
+}
 .shopimg{
-    width: 20%;
-    height: 40%;
+    width: 50cap;
     border-radius: 12px;
    position: relative;
-   left: 70%;
-   
-
-   
-    
+   left: 80cap;
+   top: 10cap;
+  
+}
+.swiper {
+    width: 30%;
+    height: 50%;
+    position: absolute;
+    top: 10cap;
+    left: 5%;
+}
+.swiper-slide {
+    background-position: center;
+    background-size:auto;
+}
+.swiper-slide img {
+    display: block;
+    width: 100%;
+}
+h1{
+    font-size: 4em;
+    font-weight: 200;
+    position:absolute;
+    right: 45%;
+    top: 18cap;
+}
+p{
+    font-size: 25px;
+    font-weight: 500;
+    position: absolute;
+    right: 20px;
+    top: 45px;
+}
+.about{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
 }

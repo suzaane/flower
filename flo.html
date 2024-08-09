@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="flo.css">
     <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
 </head>
 <body>
     <div class="begin">
@@ -21,11 +23,55 @@
             </ul>
          </nav>
     </div>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="img4.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="img1.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="img3.jpg" />
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
     <div class="start">
-        <label>Hello, this is wivis flower garden</label>
+        <label>Hello, this is wivis Bouquet</label>
+        <p>no matter how much you think you know about flowers, 
+        there always some new exciting information to explore.
+       Find your favourite here......<br></p>
     </div>
-    <img  class="shopimg"src="shop.jpg" alt="shoppic">
-    
-    
+    <div class="btn">
+      <button class="see">See more </button>
+    </div>
+    <div class="about" >
+      <img  class="shopimg"src="shop.jpg" alt="shoppic">
+    </div>
+    <div class="about-text">
+      <h1>Bouquets are like<br>
+         compliments <br> they make everyone feel <br>
+       good.</h1>
+      <p1>okay</p1>
+      <a href="#" class="btn">Learn more</a>
+    </div>
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 30,
+        effect: "fade",
+        navigation: {
+          nextEl: ".swiper-button-next",
+           prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        });
+    </script>    
 </body>
 </html>
