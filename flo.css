@@ -73,11 +73,24 @@ body{
 }
 .start{
     position: absolute;
-    top:25vh;
-    left: 20vh;
+    top:10cap;
+    left: 12vh;
     font-size: 21px;
     font-weight: 500;
 
+}
+.sect{
+    width: 20%;
+    height: 45%;
+    position: absolute;
+    top:12cap;
+    left: 10cap;
+    color: rgb(106, 85, 58);
+    background-color:rgb(133, 102, 65,0.4); 
+    padding: 10px; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   
 }
 .see{
     width: 345px;
@@ -89,7 +102,7 @@ body{
     display: flex;
     gap: 2em;
     position: absolute;
-    top:65vh;
+    top:68vh;
     left: 40vh;
 }
 .see{
