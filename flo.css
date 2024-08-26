@@ -12,7 +12,7 @@ body{
     left: 0;
     width: 100%;
     height: 15%;
-    background:rgb(187, 161, 130,0.4);
+    background:rgb(202, 177, 143);
     text-align: center;
 
 }
@@ -29,13 +29,15 @@ body{
     color: rgb(147, 113, 72);
 }
 .logo:hover{
-    color:purple ;
-    text-shadow: 0 0 25px rgba(202, 60, 157, 0.5),
-                 0 0 25px rgba(202, 60, 157, 0.5);
+    color:beige ;
+    text-shadow: 0 0 25px burlywood,
+                 0 0 25px bisque;
     transition: 0.3s ease-in;
+    cursor: pointer;
 }
 .navbar{
     display: flex;
+    position: fixed;
     
 }
 .navbar ul{
@@ -43,6 +45,7 @@ body{
     padding: 0px;
     display: flex;
     justify-content: space-evenly;
+   
 }
 .navbar ul li{
     list-style: none;
@@ -50,46 +53,89 @@ body{
     margin: 5px;
     padding: 5px;
     margin-right: 10px;
+    
 
 }
 .nav-buttons{
-    background-color: bisque;
+    background-color: rgb(154, 125, 92);
     border: none;
-    padding: 10px 20px;
+    padding: 8px 8px;
     font-size: 15px;
     border-radius: 12px;
     transition: 0.3s ease;
+    cursor:pointer;
+    color: white;
 }
 .nav-buttons:hover{
-    background-color: rgb(238, 197, 148);
+    background-color: rgb(58, 46, 30);
     transition: 0.3s ease;
-    border: 2px solid white;
+    border: 2px solid rgb(133, 102, 65,0.4);
 }
 .nav-buttons i{
-    font-size: 20px;
+    font-size: 18px;
     margin: 10px;
     padding: 0;
     box-shadow: 0 0 2px 0.5px solid;
 }
-.start{
-    position: absolute;
-    top:10cap;
-    left: 12vh;
-    font-size: 21px;
-    font-weight: 500;
-
-}
 .sect{
-    width: 20%;
-    height: 45%;
+    width: 22%;
+    height: 40%;
     position: absolute;
-    top:12cap;
+    top:15cap;
     left: 10cap;
     color: rgb(106, 85, 58);
     background-color:rgb(133, 102, 65,0.4); 
     padding: 10px; 
+    border: 2px solid rgb(133, 102, 65,0.4) ;
     border-radius: 10px; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   
+}
+.start{
+    position: absolute;
+    top:0px;
+    left: 5vh;
+    font-weight: 500;
+
+}
+.start h1{
+    font-size: 2.5rem;
+    font-weight: 200;
+    position:relative;
+    margin-top: 0cap;
+    
+
+}
+.start p{
+    font-size: 20px;
+    font-weight: 300;
+    position:relative;
+    margin-top: 0px;
+    margin-left: 1px;
+
+}
+.container{
+    width: 80%;
+    height: 40%;
+   
+}
+.swiper-wrapper .image-list{
+    display: grid;
+    gap: 12px;
+    font-size: 0;
+    overflow-x: auto;
+    scrollbar-width: none;
+    grid-template-columns: repeat(10,1fr);
+    
+
+}
+.swiper-wrapper .image-list{
+    width: 40%;
+    height: 50%;
+    object-fit:cover;
+    position: absolute;
+    left: 25cap;
+    
    
 }
 .see{
@@ -102,12 +148,12 @@ body{
     display: flex;
     gap: 2em;
     position: absolute;
-    top:68vh;
+    top:65vh;
     left: 40vh;
 }
 .see{
     padding: 15px 28px;
-    background-color: rgb(135, 110, 77);
+    background-color: rgb(129, 105, 73);
     color: white;
     border: 2px solid transparent;
     border: 8px;
@@ -119,49 +165,90 @@ body{
     cursor: pointer;
 }
 .see:hover{
-    background-color: rgb(197, 169, 134);
+    background-color: rgb(156, 131, 101);
     color: black;
-    border: 2px solid wheat;
+    border:2px solid rgb(133, 102, 65,0.4);
 }
-.shopimg{
-    width: 50cap;
-    border-radius: 12px;
-   position: relative;
-   left: 80cap;
-   top: 10cap;
-  
-}
-.swiper {
-    width: 30%;
-    height: 50%;
+.upper-part{
     position: absolute;
     top: 10cap;
-    left: 5%;
+
 }
-.swiper-slide {
-    background-position: center;
-    background-size:auto;
+.upper-part .up{
+    width: 40%;
+    height: 50%;
 }
-.swiper-slide img {
-    display: block;
-    width: 100%;
+.about{
+    position: relative;
+    margin-top: 12cap;
+    left: 45cap;
 }
-h1{
-    font-size: 4em;
+.about-text h2{
+    font-size: 4.5em ;
     font-weight: 200;
     position:absolute;
-    right: 45%;
-    top: 18cap;
+    left: 10cap;
+    top: 0cap;
+
 }
-p{
-    font-size: 25px;
-    font-weight: 500;
+.shopimg{
+    width: 40cap;
+    height: auto;
+    border-radius: 15%;
+    box-shadow: 0 0 5px beige;
+     
+}
+
+h2{
+    font-size: 4em;
+    font-weight: 200;
     position: absolute;
-    right: 20px;
-    top: 45px;
+    left: 14cap;
+    top: 19cap;
+    display: flex;
 }
 .about{
     display: flex;
     align-items: center;
     gap: 1.5rem;
+}
+.text h3{
+    text-align: center;
+    font-size: 4.5rem;
+    position: relative;
+    font-weight: 800;
+    color: black;
+}
+.table{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,auto));
+    align-items: center;
+    gap: 2.5rem;
+    margin-top: 2.5rem;
+    text-align: center;
+
+}
+.row{
+    display: inline;
+    cursor: pointer;
+    
+}
+.row-img{
+    width: 100%;
+    height: 25%;
+    margin-bottom: 5px;
+    border-radius: 25%;
+}
+.flowers {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 80cap;
+    color: rgb(106, 85, 58);
+    background-color:rgba(215, 195, 170, 0.784); 
+    padding-left:5px; 
+    padding-bottom: 60cap;
+    border: 1px solid rgb(133, 102, 65,0.4) ;
+    border-radius: 10%; 
+    
 }
